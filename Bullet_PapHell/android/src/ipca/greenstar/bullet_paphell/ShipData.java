@@ -6,6 +6,13 @@ package ipca.greenstar.bullet_paphell;
 
 public class ShipData {
 
+    int shipHealthPoint;
+    int shitDamage;
+    float shipRateOfFire;
+    float shipMoveSpeed;
+
+    int shipCoins;
+
     public int getShipHealthPoint() {
         return shipHealthPoint;
     }
@@ -46,13 +53,12 @@ public class ShipData {
         this.shipCoins = shipCoins;
     }
 
-    int shipHealthPoint;
-    int shitDamage;
-    float shipRateOfFire;
-    float shipMoveSpeed;
-
-    int shipCoins;
-
-    
+    public ShipData(int shipHealthPoint, int shitDamage, float shipRateOfFire, float shipMoveSpeed, int shipCoins) {
+        this.shipHealthPoint = shipHealthPoint;
+        this.shitDamage = shitDamage;
+        this.shipRateOfFire = shipRateOfFire;
+        this.shipMoveSpeed = shipMoveSpeed;
+        this.shipCoins = shipCoins;
+    }
 
 }
